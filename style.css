@@ -32,7 +32,7 @@ body {
 
   .formulario h2 {
     margin-bottom: 20px;
-    color: #fff;
+    color: #cda6c6;
   }
 
   .formulario input {
@@ -42,21 +42,42 @@ body {
     box-sizing: border-box;
   }
 
+  .ilustrativo{
+    width: 52px;
+    height: 40px;
+    border-radius: 50%; /* Bordes redondeados para hacer un círculo */
+    margin-bottom: 20px;
+  }
+
   .formulario button {
     width: 100%;
     padding: 10px;
-    background-color: #481377;
+    background-color: #6d3f95;
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
   }
 
+
   .formulario a {
-    color: #7c08aa;
+    color: #ffffff;
     text-decoration: none;
   }
 
   .formulario a:hover {
     text-decoration: underline;
+  }
+
+  .imagen{
+    border: 1px solid #c5c6c8e0;
+    border-radius: 25px;
+    width: 250px;
+    height: 300px;
+  }
+
+  .imagen1{
+    border-radius: 25px;
+    width: 25px;
+    height: 29px;
   }
