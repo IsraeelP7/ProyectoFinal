@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(#d47406, #b51685, #f10bb3);
+    animation: cambioColor 0.8s infinite alternate;
+  }
+
+  @keyframes cambioColor {
+    0% {
+      background: linear-gradient(#d47406,#b51685, #f10bb3);
+    }
+    50% {
+      background: linear-gradient(#f10bb3, #d47406, #b51685);
+    }
+    100% {
+      background: linear-gradient(#b51685, #f10bb3, #d47406);
+    }
+  }
+
+  .registro {
+    background: linear-gradient(90deg, #9f662c, #9037a6);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+  }
+
+  .registro h2 {
+    margin-bottom: 20px;
+    color: #cda6c6;
+  }
+
+  .registro input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+
+  .ilustrativo{
+    width: 52px;
+    height: 40px;
+    border-radius: 50%; /* Bordes redondeados para hacer un círculo */
+    margin-bottom: 20px;
+  }
+
+  .registro button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6d3f95;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+
+
+  .registro a {
+    color: #ffffff;
+    text-decoration: none;
+    text-align: right;
+  }
+
+  .registro a:hover {
+    text-decoration: underline;
+    text-align: right;
+  }
+
+  .imagen{
+    border: 1px solid #c5c6c8e0;
+    border-radius: 25px;
+    width: 250px;
+    height: 300px;
+  }
+
+  .imagen1{
+    border-radius: 25px;
+    width: 25px;
+    height: 29px;
+  }
