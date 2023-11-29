@@ -5,21 +5,21 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(#d47406, #b51685);
+    background: linear-gradient(rgb(34, 125, 4), #053e31);
     animation: cambioColor 0.8s infinite alternate;
   }
 
   @keyframes cambioColor {
     0% {
-      background: linear-gradient(#d47406,#b51685);
+      background: linear-gradient(rgb(34, 125, 4),#053e31);
     }
     100% {
-      background: linear-gradient(#b51685,#d47406);
+      background: linear-gradient(#053e31, rgb( 34, 125, 4));
     }
   }
 
-  .registro {
-    background: linear-gradient(90deg, #9f662c, #9037a6);
+  .recuperar {
+    background: linear-gradient(90deg, #86c029, #296441);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -27,12 +27,12 @@ body {
     text-align: center;
   }
 
-  .registro h2 {
+  .recuperar h2 {
     margin-bottom: 20px;
-    color: #cda6c6;
+    color: #a6cdc4;
   }
 
-  .registro input {
+  .recuperar input {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -46,10 +46,10 @@ body {
     margin-bottom: 20px;
   }
 
-  .registro button {
+  .recuperar button {
     width: 100%;
     padding: 10px;
-    background-color: #6d3f95;
+    background-color: rgb(166, 226, 70);
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -58,12 +58,12 @@ body {
 
 
 
-  .registro a {
+  .recuperar a {
     color: #ffffff;
     text-decoration: none;
   }
 
-  .registro a:hover {
+  .recuperar a:hover {
     text-decoration: underline;
   }
 

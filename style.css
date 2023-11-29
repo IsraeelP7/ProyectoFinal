@@ -5,19 +5,16 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(#7c08aa, #17374b, #4907ce);
+    background: linear-gradient(#17374b, #4907ce);
     animation: cambioColor 0.8s infinite alternate;
   }
 
   @keyframes cambioColor {
     0% {
-      background: linear-gradient(#7c08aa,#17374b, #4907ce);
-    }
-    50% {
-      background: linear-gradient(#4907ce, #7c08aa, #17374b);
+      background: linear-gradient(#4907ce, #17374b);
     }
     100% {
-      background: linear-gradient(#17374b, #4907ce, #7c08aa);
+      background: linear-gradient(#17374b, #4907ce,);
     }
   }
 
