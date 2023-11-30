@@ -11,7 +11,7 @@
     <h1 style=" text-align: center;" >Elimina Usuario</h1>
     <form style=" text-align: center;" method="GET" action="deleteUsuario.php">
 
-        <input  type="text" name="usuario" placeholder="usuario" />
+        <input  type="text" name="nombre" placeholder="Nombre del usuario" />
         <br />
         <button type="submit">Eliminar usuario</button>
 
