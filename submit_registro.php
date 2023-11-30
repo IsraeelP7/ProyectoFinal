@@ -3,6 +3,7 @@
 include "conexion.php";
 mysqli_set_charset($conexion, 'utf8');
 
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $usuario = mysqli_real_escape_string($conexion, $_POST['usuario']);
 
