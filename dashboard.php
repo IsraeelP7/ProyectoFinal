@@ -6,10 +6,8 @@ mysqli_set_charset($conexion, 'utf8');
 // Generar la consulta SQL
 $consulta_sql = "SELECT * FROM usuarios";
 
-// Mandar el query por medio de la conexión y almacenaremos el resultado en una variable
 $resultado = $conexion->query($consulta_sql);
 
-// Retorna el numero de filas del resultado. Si encuentra más de uno, lo usamos para imprimir el resultado en nuestra tabla
 $count = mysqli_num_rows($resultado);
 
 ?>
@@ -29,7 +27,7 @@ $count = mysqli_num_rows($resultado);
         <h1>Lista de Usuarios</h1>
 
         <?php if ($count > 0) : ?>
-            <!-- Si hay registros, mostramos la tabla -->
+            
             <table>
                 <thead>
                     <tr>
@@ -53,11 +51,11 @@ $count = mysqli_num_rows($resultado);
                 </tbody>
             </table>
         <?php else : ?>
-            <!-- Si no hay registros, mostramos un mensaje -->
+            
             <h1 class="no-records">Sin ningún registro</h1>
         <?php endif; ?>
 
-        <!-- Enlaces de navegación -->
+        
         <h1><a href='EliminarUsuario.php'>¿Deseas eliminar tu usuario?</a></h1>
         <h3><a href='index.html'>Página principal</a></h3>
     </div>

@@ -8,7 +8,7 @@ body {
     background: linear-gradient(#17374b, #4907ce);
     animation: cambioColor 0.8s infinite alternate;
   }
-  
+
   @keyframes cambioColor {
     0% {
       background: linear-gradient(#4907ce, #17374b);
@@ -42,7 +42,7 @@ body {
   .ilustrativo{
     width: 52px;
     height: 40px;
-    border-radius: 50%; /* Bordes redondeados para hacer un círculo */
+    border-radius: 50%;
     margin-bottom: 20px;
   }
 

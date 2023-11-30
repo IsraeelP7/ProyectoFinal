@@ -17,7 +17,7 @@ form {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: relative; /* Hace que los elementos posicionados dentro usen este formulario como referencia */
+    position: relative; 
 }
 
 input {
@@ -43,9 +43,9 @@ button:hover {
 h3 a {
     color: #333;
     text-decoration: none;
-    position: absolute; /* Posiciona el enlace absolutamente dentro del formulario */
-    bottom: 480px; /* Distancia desde la parte inferior */
-    right: 555px; /* Distancia desde la derecha */
+    position: absolute; 
+    bottom: 480px; 
+    right: 555px; 
 }
 
 h3 a:hover {

@@ -3,7 +3,7 @@
 include "conexion.php";
 mysqli_set_charset($conexion,'utf8');
 
-//declaracion de varibales para formulario
+
 
 
 $buscarUsuario = "SELECT * FROM usuarios where usuario = '$_POST[usuario]'";
