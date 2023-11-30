@@ -30,9 +30,9 @@ if($count ==1 ){
     '$_POST[contrasena]'    
     )");
 
-echo "<br />" . "<h2>" . "Usuario Creado Exitosamente!" . "</h2>";
+echo "<br />" . "<h1>" . "Usuario Creado Exitosamente!" . "</h1>";
 echo "<h4>" . "Bienvenido: " . $_POST['usuario'] . "</h4>" . "\n\n";
-echo "<h5>" . "<a href='./form_registro.php'>Registro</a>" . "</h5>";
+echo "<h5>" . "<a href='./index2.php'>¿Quieres registrar otra cuenta?</a>" . "</h5>";
 echo "<h5>" . "<a href='./index.html>Iniciar Sesión</a>" . "</h5>";
 
 //termina el else
