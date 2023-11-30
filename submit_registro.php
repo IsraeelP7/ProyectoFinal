@@ -1,43 +1,42 @@
 <?php
-//conexion a la base datos
+// Conexión a la base de datos
 include "conexion.php";
-mysqli_set_charset($conexion,'utf8');
+mysqli_set_charset($conexion, 'utf8');
 
+// Validar que se haya enviado el formulario
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $usuario = mysqli_real_escape_string($conexion, $_POST['usuario']);
 
+    // Verificar si el usuario ya existe
+    $buscarUsuario = "SELECT * FROM usuarios WHERE usuario = '$usuario'";
+    $result = $conexion->query($buscarUsuario);
+    $count = mysqli_num_rows($result);
 
+    if ($count == 1) {
+        echo '<p style="color: #e74c3c; font-size: 18px;">El nombre de usuario ya ha sido ocupado. Por favor, elige otro.</p>';
+        echo '<a href="./index2.php" style="text-decoration: none; font-weight: bold; color: #3498db; font-size: 16px;">Volver al formulario de registro</a>';
+    } else {
+        // Insertar nuevo usuario
+        $nombre = mysqli_real_escape_string($conexion, $_POST['nombre']);
+        $apellido = mysqli_real_escape_string($conexion, $_POST['apellido']);
+        $telefono = mysqli_real_escape_string($conexion, $_POST['telefono']);
+        $contrasena = mysqli_real_escape_string($conexion, $_POST['contrasena']);
 
-$buscarUsuario = "SELECT * FROM usuarios where usuario = '$_POST[usuario]'";
+        $queryInsert = "INSERT INTO usuarios (nombre, apellido, telefono, usuario, contrasena)
+                        VALUES ('$nombre', '$apellido', '$telefono', '$usuario', '$contrasena')";
 
-$result = $conexion -> query($buscarUsuario);
-$count = mysqli_num_rows($result);
-
-if($count ==1 ){
-    echo'El nombre se usuario ya a sido ocupado';
+        if (mysqli_query($conexion, $queryInsert)) {
+            echo '<h1 style="color: #27ae60;">Usuario creado con exito</h1>';
+            echo '<h4>Bienvenido: ' . $usuario . '</h4>';
+            echo '<h5><a href="./index2.php" style="text-decoration: none; font-weight: bold; color: #3498db;">¿Quieres registrar otra cuenta?</a></h5>';
+            echo '<h5><a href="./index.html" style="text-decoration: none; font-weight: bold; color: #3498db;">Iniciar Sesión</a></h5>';
+        } else {
+            echo '<p style="color: #e74c3c; font-size: 18px;">Error al crear el usuario. Inténtalo de nuevo.</p>';
+            echo '<a href="./index2.php" style="text-decoration: none; font-weight: bold; color: #3498db; font-size: 16px;">Volver al formulario de registro</a>';
+        }
+    }
+} else {
+    // Si no se ha enviado el formulario, redirige a la página de registro
     header('Location: ./form_registro.php');
-    
-}else{
-    mysqli_query($conexion, "INSERT INTO usuarios (
-    nombre,
-    apellido,
-    telefono,
-    usuario,
-    contrasena)
-        VALUES(
-    '$_POST[nombre]',
-    '$_POST[apellido]',
-    '$_POST[telefono]',
-    '$_POST[usuario]',
-    '$_POST[contrasena]'    
-    )");
-
-echo "<br />" . "<h1>" . "Usuario Creado Exitosamente!" . "</h1>";
-echo "<h4>" . "Bienvenido: " . $_POST['usuario'] . "</h4>" . "\n\n";
-echo "<h5>" . "<a href='./index2.php'>¿Quieres registrar otra cuenta?</a>" . "</h5>";
-echo "<h5>" . "<a href='./index.html>Iniciar Sesión</a>" . "</h5>";
-
-//termina el else
 }
-
-
-
 ?>

@@ -1,5 +1,4 @@
 <?php
-// Establecer la conexión (asegúrate de tener esta parte en tu archivo PHP)
     $servidor = 'localhost:3306';
     $usuario = 'root';
     $contrasena = '5627519983';
