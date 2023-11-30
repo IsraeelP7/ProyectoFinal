@@ -3,11 +3,9 @@
 include "conexion.php";
 mysqli_set_charset($conexion, 'utf8');
 
-// Validar que se haya enviado el formulario
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $usuario = mysqli_real_escape_string($conexion, $_POST['usuario']);
 
-    // Verificar si el usuario ya existe
     $buscarUsuario = "SELECT * FROM usuarios WHERE usuario = '$usuario'";
     $result = $conexion->query($buscarUsuario);
     $count = mysqli_num_rows($result);
@@ -36,7 +34,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     }
 } else {
-    // Si no se ha enviado el formulario, redirige a la página de registro
-    header('Location: ./form_registro.php');
+    header('Location: ./index2.php');
 }
 ?>
