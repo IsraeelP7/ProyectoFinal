@@ -43,8 +43,8 @@ if ( $count>0 ){
     echo"<h1 style='color:red' >Sin Ningun registro</h1>";
     }
 
-    echo "<h1><a href='EliminarUsuario.php'>Elimnar Usuario</a></h1>";
-    echo "<h1><a href='index.html'>Cerrar Sesión</a></h1>";
+    echo "<h1><a href='EliminarUsuario.php'>¿Deseas eliminar tu usuario?</a></h1>";
+    echo "<h3><a href='index.html'>Pagina principal</a></h3>";
 
 ?>
 

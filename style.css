@@ -8,7 +8,7 @@ body {
     background: linear-gradient(#17374b, #4907ce);
     animation: cambioColor 0.8s infinite alternate;
   }
-
+  
   @keyframes cambioColor {
     0% {
       background: linear-gradient(#4907ce, #17374b);
