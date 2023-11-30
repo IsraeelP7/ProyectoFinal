@@ -38,3 +38,11 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+img {
+    display: block;
+    margin: 20px auto; /* Ajusta el margen según sea necesario */
+    max-width: 80%; /* Limita el ancho máximo al 80% del contenedor */
+    max-height: 230px; /* Limita la altura máxima a 300px (ajusta según sea necesario) */
+    height: auto; /* Hace que la imagen sea responsive */
+}

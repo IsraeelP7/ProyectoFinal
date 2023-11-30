@@ -54,6 +54,8 @@ $count = mysqli_num_rows($resultado);
             
             <h1 class="no-records">Sin ningún registro</h1>
         <?php endif; ?>
+        <img src="ejemploimagen.jpeg" alt="hola soy una imagen">
+
 
         
         <h1><a href='EliminarUsuario.php'>¿Deseas eliminar tu usuario?</a></h1>
