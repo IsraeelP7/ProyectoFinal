@@ -1,25 +1,26 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(#d47406, #b51685);
-    animation: cambioColor 0.8s infinite alternate;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(#d40606, #9f1d1d);
+  animation: cambioColor 0.8s infinite alternate;
+}
 
-  @keyframes cambioColor {
-    0% {
-      background: linear-gradient(#d47406,#b51685);
-    }
-    100% {
-      background: linear-gradient(#b51685,#d47406);
-    }
+@keyframes cambioColor {
+  0% {
+    background: linear-gradient(#d40606,#9f1d1d);
   }
+  100% {
+    background: linear-gradient(#9f1d1d,#d40606);
+  }
+}
 
+ 
   .registro {
-    background: linear-gradient(90deg, #9f662c, #9037a6);
+    background: linear-gradient(90deg, #ab6d30, #a63748);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -49,7 +50,7 @@ body {
   .registro button {
     width: 100%;
     padding: 10px;
-    background-color: #6d3f95;
+    background-color: rgb(213, 84, 84);
     color: #fff;
     border: none;
     border-radius: 4px;
