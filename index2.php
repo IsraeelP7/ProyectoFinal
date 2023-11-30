@@ -11,7 +11,7 @@
         <h2>Nuevo Usuario</h2>
         <img src="CR7logo.png" alt="Imagen bajo iniciar sesion" class="ilustrativo">
         
-        <form action="tuscript.php" method="POST">
+        <form action="submit_registro.php" method="POST">
             <input type="text" name="nombre" placeholder="Nombre" required>
             <input type="text" name="apellido" placeholder="Apellido" required> 
             <input type="text" name="telefono" placeholder="Numero telefónico" required>    
